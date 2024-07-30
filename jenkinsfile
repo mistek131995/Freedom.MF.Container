@@ -9,7 +9,7 @@ pipeline
 				script {
 					res = sh(script: "test -d /home/source && echo '1' || echo '0' ", returnStdout: true).trim()
 					if(res=='0'){
-						sh 'mkdir /home/source'
+						sh 'mkdir /home/$USER/source'
 					}
 				}
             }
