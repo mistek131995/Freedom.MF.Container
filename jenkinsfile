@@ -6,37 +6,37 @@ pipeline
         stage('Download source')
         {
             steps {
-
+                sh ''
             }
         }
         stage('Create image')
         {
             steps {
-
+                sh ''
             }
         }
         stage('Stop old container')
         {
             steps {
-
+                sh ''
             }
         }
         stage('Start new container')
         {
             steps {
-
+                sh ''
             }
         }
         stage('Clear images')
         {
             steps {
-
+                sh ''
             }
         }
         stage('Clear source')
         {
             steps {
-
+                sh ''
             }
         }
     }
