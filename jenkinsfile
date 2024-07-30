@@ -5,27 +5,45 @@ pipeline
     {
         stage('Download source')
         {
+            steps
+            {
 
+            }
         }
         stage('Create image')
         {
+            steps
+            {
 
+            }
         }
         stage('Stop old container')
         {
+            steps
+            {
 
+            }
         }
         stage('Start new container')
         {
+            steps
+            {
 
+            }
         }
         stage('Clear images')
         {
+            steps
+            {
 
+            }
         }
         stage('Clear source')
         {
+            steps
+            {
 
+            }
         }
     }
 }
