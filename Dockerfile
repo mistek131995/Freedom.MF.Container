@@ -4,7 +4,7 @@ FROM nginx:latest
 #COPY . .
 
 RUN apt update
-RUN apt install nodejs
+RUN apt -y install nodejs
 #RUN npm install && tsc -b && vite build
 
 EXPOSE 80
