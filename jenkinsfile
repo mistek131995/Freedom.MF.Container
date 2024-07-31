@@ -37,7 +37,7 @@ pipeline
         stage('Run container')
         {
             steps {
-				sh 'docker run -d -p 80:80 -p 443:443 --name=vpn-api-${BUILD_NUMBER} --restart=always mf.container.${BUILD_NUMBER}'
+				sh 'docker run -d -p 80:80 -p 443:443 --name=mf.container.${BUILD_NUMBER} --restart=always mf.container.${BUILD_NUMBER}'
             }
         }
     }
