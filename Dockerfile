@@ -1,6 +1,7 @@
 FROM nginx:latest
 
-COPY . ./home/source
+WORKDIR ./home/source
+COPY . .
 
 EXPOSE 80
 
