@@ -9,35 +9,5 @@ pipeline
 				sh 'git clone https://github.com/mistek131995/Freedom.MF.Container.git /home/source/mf.container'
             }
         }
-        stage('Create image')
-        {
-            steps {
-                sh ''
-            }
-        }
-        stage('Stop old container')
-        {
-            steps {
-                sh ''
-            }
-        }
-        stage('Start new container')
-        {
-            steps {
-                sh ''
-            }
-        }
-        stage('Clear images')
-        {
-            steps {
-                sh ''
-            }
-        }
-        stage('Clear source')
-        {
-            steps {
-                sh ''
-            }
-        }
     }
 }
