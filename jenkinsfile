@@ -19,14 +19,14 @@ pipeline
         stage('Build image')
         {
             steps {
-				sh 'docker build -t MF.Container.${BUILD_NUMBER} /home/source/MF.Container'
+				sh 'docker build -t mf.container.${BUILD_NUMBER} /home/source/MF.Container'
             }
         }
         stage('Stop container')
         {
             steps {
                 script{
-                    def containerId = sh (script: 'docker ps -q -f name=MF.Container', returnStdout: true)
+                    def containerId = sh (script: 'docker ps -q -f name=mf.container', returnStdout: true)
 
                     if(containerId != ''){
                         sh "docker stop ${containerId}"
@@ -37,7 +37,7 @@ pipeline
         stage('Run container')
         {
             steps {
-				sh 'docker run -d -p 80:80 -p 443:443 --name=vpn-api-${BUILD_NUMBER} --restart=always MF.Container.${BUILD_NUMBER}'
+				sh 'docker run -d -p 80:80 -p 443:443 --name=vpn-api-${BUILD_NUMBER} --restart=always mf.container.${BUILD_NUMBER}'
             }
         }
     }
