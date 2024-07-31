@@ -1,7 +1,7 @@
 FROM nginx:latest
 
-#WORKDIR ./home/source
-#COPY . .
+WORKDIR ./home/source
+COPY . .
 
 RUN apt update && apt -y install nodejs
 #RUN npm install && tsc -b && vite build
