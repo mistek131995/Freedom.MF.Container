@@ -40,5 +40,15 @@ pipeline
 				sh 'docker run -d -p 80:80 -p 443:443 --name=mf.container.${BUILD_NUMBER} --restart=always mf.container.${BUILD_NUMBER}'
             }
         }
+        stage('Clear images') {
+            steps {
+                sh "docker system prune -af"
+            }
+        }
+        stage('Delete source') {
+            steps {
+                sh 'rm -R /home/source/MF.Container'
+            }
+        }
     }
 }
