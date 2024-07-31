@@ -19,7 +19,7 @@ pipeline
         stage('Build image')
         {
             steps {
-				sh 'cd /home/source/MF.Container && docker build'
+				sh 'cd /home/source/MF.Container && docker build .'
             }
         }
     }
