@@ -6,6 +6,7 @@ pipeline
         stage('Download source')
         {
             steps {
+                sh 'pwd'
 				sh 'git clone https://github.com/mistek131995/Freedom.MF.Container.git /home/source/mf.container && pwd'
 				sh 'pwd'
             }
