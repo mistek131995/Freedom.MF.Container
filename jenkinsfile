@@ -6,8 +6,6 @@ pipeline
         stage('Download source')
         {
             steps {
-                sh 'mkdir /home/source'
-
                 script {
                     res = sh(script: "test -d /home/source/MF.Container && echo '1' || echo '0' ", returnStdout: true).trim()
                     if(res=='1'){
