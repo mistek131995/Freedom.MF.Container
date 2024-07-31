@@ -17,4 +17,7 @@ export default defineConfig({
         ]
       })
   ],
+    build: {
+      outDir: '/usr/share/nginx/html'
+    }
 })
