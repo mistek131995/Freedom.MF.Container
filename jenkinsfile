@@ -5,8 +5,15 @@ pipeline
     {
         stage('Download source')
         {
+            script {
+                res = sh(script: "test -d /home/source/MF.Container && echo '1' || echo '0' ", returnStdout: true).trim()
+                if(res=='1'){
+                    sh 'rm -R /home/source/MF.Container'
+                }
+            }
+
             steps {
-				sh 'cd /home/source && pwd && git clone https://github.com/mistek131995/Freedom.MF.Container.git .'
+				sh 'git clone https://github.com/mistek131995/Freedom.MF.Container.git /home/source/MF.Container'
             }
         }
     }
