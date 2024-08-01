@@ -3,18 +3,46 @@
     body{
         background-color: black;
     }
+
+    #top_menu{
+
+    }
 }
 
-@media only screen and (min-device-width: 576px) and (max-device-width: 992px)
+/*@media only screen and (min-device-width: 576px) and (max-device-width: 992px)*/
+/*{*/
+/*    body{*/
+/*        background-color: black;*/
+/*    }*/
+/*}*/
+
+@media only screen and (min-device-width: 576px)
 {
     body{
         background-color: black;
     }
+
+    div#top_menu{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    div#top_menu div{
+        display: flex;
+        color: white;
+    }
+
+    #top_menu .menu-item{
+        padding: 10px 15px;
+    }
+
+    #top_menu .menu-item:hover{
+        background-color: #1e1e1e;
+        cursor: default;
+    }
 }
 
-@media only screen and (min-device-width: 992px)
-{
-    body{
-        background-color: black;
-    }
+body{
+    padding: 0;
+    margin: 0;
 }
