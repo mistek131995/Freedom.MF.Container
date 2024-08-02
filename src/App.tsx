@@ -3,8 +3,8 @@ import AppCategories from "app_catalog/AppCategories"
 
 function App() {
 
-  return <>
-      <div id="top_menu">
+    return <>
+        <div id="top_menu">
           <div>
               <div className="menu-item">Элемент 1</div>
               <div className="menu-item">Элемент 2</div>
@@ -14,11 +14,11 @@ function App() {
           <div>
               Аккаунт
           </div>
-      </div>
-      <div>
-          <AppCategories/>
-      </div>
-  </>
+        </div>
+        <div>
+            <AppCategories/>
+        </div>
+    </>
 
 }
 

@@ -5,7 +5,7 @@ import federation from "@originjs/vite-plugin-federation";
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [
+    plugins: [
       react(),
       federation({
         name: "container",
@@ -16,7 +16,7 @@ export default defineConfig({
             "react"
         ]
       })
-  ],
+    ],
     build: {
       target: "esnext",
       outDir: '/var/www/html'
