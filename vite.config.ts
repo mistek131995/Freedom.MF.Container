@@ -9,9 +9,9 @@ export default defineConfig({
       react(),
       federation({
         name: "container",
-        remotes: [
-
-        ],
+        remotes: {
+            app_catalog: "http://89.23.113.254:81/assets/remoteEntry.js"
+        },
         shared: [
             "react"
         ]
