@@ -1,5 +1,7 @@
 import './App.css'
-import AppCategories from "app_catalog/AppCategories"
+import React from "react";
+
+const AppCategories = React.lazy(() => import('app_catalog/AppCategories'))
 
 function App() {
 
