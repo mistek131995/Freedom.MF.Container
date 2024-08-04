@@ -19,6 +19,5 @@ export default defineConfig({
     ],
     build: {
       target: "esnext",
-      outDir: '/var/www/html'
     }
 })
